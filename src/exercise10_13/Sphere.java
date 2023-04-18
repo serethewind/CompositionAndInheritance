@@ -4,7 +4,7 @@ public class Sphere extends ThreeDimensionalShape {
     private double radius;
 
     public Sphere(double radius) {
-        this.radius = radius;
+        this.radius = Math.abs(radius);
     }
 
     public double getRadius() {
@@ -12,7 +12,7 @@ public class Sphere extends ThreeDimensionalShape {
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        this.radius = Math.abs(radius);
     }
 
     @Override

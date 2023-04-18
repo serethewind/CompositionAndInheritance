@@ -4,7 +4,7 @@ public class Cube extends ThreeDimensionalShape {
     private double side;
 
     public Cube(double side) {
-        this.side = side;
+        this.side = Math.abs(side);
     }
 
     public double getSide() {
@@ -12,7 +12,7 @@ public class Cube extends ThreeDimensionalShape {
     }
 
     public void setSide(double side) {
-        this.side = side;
+        this.side = Math.abs(side);
     }
 
 

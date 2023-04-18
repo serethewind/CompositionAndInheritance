@@ -4,7 +4,7 @@ public class Circle extends TwoDimensionalShape {
     private double radius;
 
     public Circle(double radius) {
-        this.radius = radius;
+        this.radius = Math.abs(radius);
     }
 
     public double getRadius() {
@@ -12,7 +12,7 @@ public class Circle extends TwoDimensionalShape {
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        this.radius = Math.abs(radius);
     }
 
     @Override

@@ -6,8 +6,8 @@ public class Triangle extends TwoDimensionalShape {
     private double height;
 
     public Triangle(double base, double height) {
-        this.base = base;
-        this.height = height;
+        this.base = Math.abs(base);
+        this.height = Math.abs(height);
     }
 
     public double getBase() {
@@ -15,7 +15,7 @@ public class Triangle extends TwoDimensionalShape {
     }
 
     public void setBase(double base) {
-        this.base = base;
+        this.base = Math.abs(base);
     }
 
     public double getHeight() {
@@ -23,7 +23,7 @@ public class Triangle extends TwoDimensionalShape {
     }
 
     public void setHeight(double height) {
-        this.height = height;
+        this.height = Math.abs(height);
     }
 
     @Override

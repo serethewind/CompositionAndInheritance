@@ -4,7 +4,7 @@ public class Square extends TwoDimensionalShape {
     private double length;
 
     public Square(double length) {
-        this.length = length;
+        this.length = Math.abs(length);
     }
 
     public double getLength() {
@@ -12,7 +12,7 @@ public class Square extends TwoDimensionalShape {
     }
 
     public void setLength(double length) {
-        this.length = length;
+        this.length = Math.abs(length);
     }
 
     @Override
