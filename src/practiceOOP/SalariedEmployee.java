@@ -1,6 +1,6 @@
-package abstraction;
+package practiceOOP;
 
-public class SalariedEmployee extends Employee{
+public class SalariedEmployee extends Employee {
 
     private double weeklySalary;
 

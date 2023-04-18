@@ -1,4 +1,4 @@
-package CompostionAndInheritance;
+package exercise10_16;
 
 public class Employee {
     private String firstName;
@@ -46,7 +46,17 @@ public class Employee {
         this.compensationModelTemplate = compensationModelTemplate;
     }
 
-   public double earnings(){
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", ssn='" + ssn + '\'' +
+                ", compensationModelTemplate=" + compensationModelTemplate +
+                '}';
+    }
+
+    public double earnings(){
         return compensationModelTemplate.earnings();
    }
 

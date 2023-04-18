@@ -1,6 +1,6 @@
-package abstraction;
+package practiceOOP;
 
-public class Invoice implements Payable{
+public class Invoice implements Payable {
     private String partNumber;
     private String partDescription;
     private int quantity;

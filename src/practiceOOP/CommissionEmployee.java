@@ -1,6 +1,6 @@
-package abstraction;
+package practiceOOP;
 
-public class CommissionEmployee extends Employee{
+public class CommissionEmployee extends Employee {
 
     private double grossSales;
     private double commissionRate;
@@ -43,6 +43,6 @@ public class CommissionEmployee extends Employee{
 
     @Override
     public double getPaymentAmount() {
-        return getCommissionRate() + getGrossSales();
+        return getCommissionRate() * getGrossSales();
     }
 }

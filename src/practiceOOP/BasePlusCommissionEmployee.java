@@ -1,4 +1,4 @@
-package abstraction;
+package practiceOOP;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary;

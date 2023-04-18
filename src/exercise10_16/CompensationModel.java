@@ -1,44 +1,21 @@
-package CompostionAndInheritance;
+package exercise10_16;
 
-public class CompensationModel {
+public interface CompensationModel {
 
-    private double grossSales;
-    private double commissionRate;
 
-    private double baseSalary;
-
-    public double getGrossSales() {
-        return grossSales;
-    }
-
-    public void setGrossSales(double grossSales) {
-        this.grossSales = grossSales;
-    }
-
-    public double getCommissionRate() {
-        return commissionRate;
-    }
-
-    public void setCommissionRate(double commissionRate) {
-        this.commissionRate = commissionRate;
-    }
-
-    public double getBaseSalary() {
-        return baseSalary;
-    }
-
-    public CompensationModel(double grossSales, double commissionRate) {
-        this.grossSales = grossSales;
-        this.commissionRate = commissionRate;
-    }
-
-    public CompensationModel(double grossSales, double commissionRate, double baseSalary) {
-        this.grossSales = grossSales;
-        this.commissionRate = commissionRate;
-        this.baseSalary = baseSalary;
-    }
-
-    public double earnings() {
-        return 0;
-    }
+    /**
+     * SalariedCompensationModel—For Employees who are paid a fixed weekly salary, this
+     * class should contain a weeklySalary instance variable, and should implement method
+     * earnings to return the weeklySalary.
+     * b) HourlyCompensationModel—For Employees who are paid by the hour and receive overtime pay for all hours worked in excess of 40 hours per week, this class should contain
+     * wage and hours instance variables, and should implement method earnings based on
+     * the number of hours worked (see class HourlyEmployee’s earnings method in
+     * Fig. 10.6).
+     * c)
+     * d) BasePlusCommissionCompensationModel—For Employees who are paid a base salary
+     * and commission, this class should contain instance variables grossSales, commissionRate and baseSalary and should implement earnings to return baseSalary + grossSales * commissionRate.
+     *
+     * @return
+     */
+    double earnings();
 }

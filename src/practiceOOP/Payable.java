@@ -1,4 +1,4 @@
-package abstraction;
+package practiceOOP;
 
 public interface Payable {
     double getPaymentAmount();
