@@ -44,29 +44,14 @@ public class GenericStackUsingArray<E> {
 //                break;
 //            }
 //        }
+
         E storage = list[numberOfProperties - 1];
         numberOfProperties--;
         list[numberOfProperties] = null;
-
-//        int index = 0;
-//        for (int i = 0; i < list.length; i++){
-//            if (list[i] != null && list[i].toString().equalsIgnoreCase(String.valueOf(numberOfProperties-1))){
-//                storage[index] = list[i];
-//                list[i] = null;
-//            }
-//        }
         return storage;
     }
 
     public E peek(){
-//        E[] storage = (E[]) new Object[1];
-//        int index = 0;
-//        for (int i = 0; i < list.length; i++){
-//            if (list[i] != null && String.valueOf(list[i]).equalsIgnoreCase(String.valueOf(list.length-1))){
-//                storage[index] = list[i];
-//            }
-//        }
-//        return Arrays.toString(storage);
         return list[numberOfProperties - 1];
     }
 
