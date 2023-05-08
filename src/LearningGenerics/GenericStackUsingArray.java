@@ -14,7 +14,12 @@ public class GenericStackUsingArray<E> {
     }
 
     public boolean isEmpty(){
-        return list.length == 0;
+        for (E listItem : list){
+            if (listItem != null){
+                return false;
+            }
+        }
+        return true;
     }
 
     public void push(E property){
@@ -89,7 +94,7 @@ public class GenericStackUsingArray<E> {
         stack.push("Chidinma");
         System.out.println(stack.size());
         System.out.println(stack.pop());
-//        System.out.println(stack.size());
+        System.out.println(stack.size());
         System.out.println(stack.peek());
     }
 
